@@ -8,14 +8,15 @@
   },
   "dependencies": {
     "ejs": "^2.3.3",
-    "good": "^6.3.0",
-    "good-console": "^5.0.3",
-    "h2o2": "^4.0.1",
-    "hapi": "^9.0.2",
+    "good": "^7.1.0",
+    "good-console": "^6.1.2",
+    "h2o2": "^5.1.1",
+    "hapi": "^13.4.0",
     "hapi-cors-headers": "^1.0.0",
     "http-proxy": "~1.11",
-    "inert": "^3.0.1",
-    "vision": "^3.0.0"
+    "inert": "^4.0.0",
+    "vision": "^4.1.1",
+    "snyk": "^1.83.0"
   },
   "devDependencies": {
     "chai": "^3.2.0",
@@ -40,11 +41,14 @@
     "start_app": "./bin/start-app",
     "start_selenium_with_chromedriver": "start_selenium_with_chromedriver",
     "test": "standard && ./bin/test-background",
-    "test:mocha": "mocha test/test-*.js"
+    "test:mocha": "mocha test/test-*.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/gr2m/CORS-Proxy"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
